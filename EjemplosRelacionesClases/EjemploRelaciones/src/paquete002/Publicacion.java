@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquetedos;
-
+package paquete002;
+import paquete03.Autor;
 /**
  *
  * @author reroes
@@ -13,6 +13,7 @@ public class Publicacion {
 
     private Autor autor;
     private int anioPublicacion;
+    private String pasaporte;
 
     public Publicacion(Autor a, int anio) {
         autor = a;
@@ -26,6 +27,8 @@ public class Publicacion {
     public void establecerAnioPublicacion(int anio) {
         anioPublicacion = anio;
     }
+    
+    
 
     public Autor obtenerAutor() {
         return autor;
@@ -33,5 +36,9 @@ public class Publicacion {
 
     public int obtenerAnioPublicacion() {
         return anioPublicacion;
+    }
+    
+    public String obtenerPasaporte(){
+        return pasaporte;
     }
 }
